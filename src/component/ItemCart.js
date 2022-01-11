@@ -54,7 +54,7 @@ export default function ItemCart(props) {
                 handleMinus(item.id);
               }}
             >
-              <img src="../../image/minus.png" alt="" />
+              <img src="../../public/image/minus.png" alt="-" />
             </div>
 
             <div className="cart-item-count-number">{item.count}</div>
@@ -65,7 +65,7 @@ export default function ItemCart(props) {
                 handlePlus(item.id);
               }}
             >
-              <img src="../../image/plus.png" alt="" />
+              <img src="../../image/plus.png" alt="+" />
             </div>
           </div>
           <div

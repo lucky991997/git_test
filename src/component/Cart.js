@@ -7,6 +7,9 @@ function Cart() {
   const { products, styles } = useSelector((state) => state.productReducer);
   const stylesCart = styles;
   console.log(stylesCart)
+  console.log(products)
+  console.log(styles)
+ 
   const product = () => {
     if (products) {
       const item = products.map((item, index) => {

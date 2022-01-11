@@ -20,6 +20,7 @@ import {
 export const productReducer = (state = initialState, action) => {
   const productsListUpdate = () => {
     const productsListUpdate = [...state.listProducts];
+    console.log(productsListUpdate)
     return productsListUpdate;
   };
   const itemListIndex = (item) => {
@@ -34,6 +35,9 @@ export const productReducer = (state = initialState, action) => {
     const index = productsUpdate().findIndex((x) => x.id === item.id);
     return index;
   };
+
+
+  
   switch (action.type) {
     case PRODUCT_LIST:
       return {
